@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class InssCalculationService {
-  private static final BigDecimal BAND_LIMIT_1 = BigDecimal.valueOf(1412);
-  private static final BigDecimal BAND_LIMIT_2 = BigDecimal.valueOf(2666.68);
-  private static final BigDecimal BAND_LIMIT_3 = BigDecimal.valueOf(4000.03);
-  private static final BigDecimal BAND_LIMIT_4 = BigDecimal.valueOf(7786.02);
+  private static final BigDecimal BAND_LIMIT_1 = BigDecimal.valueOf(1518);
+  private static final BigDecimal BAND_LIMIT_2 = BigDecimal.valueOf(2793.88);
+  private static final BigDecimal BAND_LIMIT_3 = BigDecimal.valueOf(4190.83);
+  private static final BigDecimal BAND_LIMIT_4 = BigDecimal.valueOf(8157.41);
 
   private static final BigDecimal TAX_RANGE_1 = BigDecimal.valueOf(0.075);
   private static final BigDecimal TAX_RANGE_2 = BigDecimal.valueOf(0.09);
