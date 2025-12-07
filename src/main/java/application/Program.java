@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 public class Program {
   public static void main(String[] args) {
-    Employee employee = new Employee("José Carlos Esteves", "000.000.00-00", BigDecimal.valueOf(3000));
+    Employee employee = new Employee("José Carlos Esteves", "000.000.00-00", BigDecimal.valueOf(8000));
 
     InssCalculationService inss = new InssCalculationService();
 
