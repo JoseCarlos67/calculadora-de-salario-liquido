@@ -43,6 +43,7 @@ public class Employee {
             "fullName='" + fullName + '\'' +
             ", cpf='" + cpf + '\'' +
             ", grossSalary=" + grossSalary +
+            ", clockRecordList=" + clockRecordList +
             '}';
   }
 }
