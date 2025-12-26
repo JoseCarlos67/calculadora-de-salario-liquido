@@ -3,7 +3,7 @@ package service.calculations;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class IrrfCalculationService {
+public class IrrfCalculationService implements DeductionService {
   // TABELA IRRF 2025
   private static final BigDecimal BAND_LIMIT_1 = BigDecimal.valueOf(2259.20);
   private static final BigDecimal BAND_LIMIT_2 = BigDecimal.valueOf(2826.65);
@@ -20,6 +20,7 @@ public class IrrfCalculationService {
   private static final BigDecimal TAX_RANGE_4 = BigDecimal.valueOf(0.225);
   private static final BigDecimal TAX_RANGE_5 = BigDecimal.valueOf(0.275);
 
+  @Override
   public BigDecimal calculate(BigDecimal calculationBasis) {
     if (calculationBasis.compareTo(BAND_LIMIT_1) <=0 ) {
       return BigDecimal.ZERO;

@@ -3,7 +3,7 @@ package service.calculations;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class InssCalculationService {
+public class InssCalculationService implements DeductionService {
   // TABELA INSS 2025
   private static final BigDecimal BAND_LIMIT_1 = BigDecimal.valueOf(1518);
   private static final BigDecimal BAND_LIMIT_2 = BigDecimal.valueOf(2793.88);
@@ -19,6 +19,7 @@ public class InssCalculationService {
   private static final BigDecimal DEDUCTION_3 = BigDecimal.valueOf(106.59);
   private static final BigDecimal DEDUCTION_4 = BigDecimal.valueOf(190.40);
 
+  @Override
   public BigDecimal calculate(BigDecimal grossSalary) {
     if (grossSalary.compareTo(BAND_LIMIT_1) <= 0) {
       BigDecimal result = grossSalary.multiply(TAX_RANGE_1).subtract(DEDUCTION_1);

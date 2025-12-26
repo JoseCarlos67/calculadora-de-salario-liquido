@@ -6,11 +6,11 @@ import model.entities.Payslip;
 import java.math.BigDecimal;
 
 public class PayslipGeneratorService {
-  private InssCalculationService inssService;
-  private IrrfCalculationService irrfService;
+  private DeductionService inssService;
+  private DeductionService irrfService;
   private SalaryService salaryService;
 
-  public PayslipGeneratorService(InssCalculationService inssService, IrrfCalculationService irrfService, SalaryService salaryService) {
+  public PayslipGeneratorService(DeductionService inssService, DeductionService irrfService, SalaryService salaryService) {
     this.inssService = inssService;
     this.irrfService = irrfService;
     this.salaryService = salaryService;
