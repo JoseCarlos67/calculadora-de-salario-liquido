@@ -16,8 +16,8 @@ import java.util.List;
 public class CsvReaderService {
   DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-  public Employee readCsv() {
-    try (BufferedReader bufferedReader = new BufferedReader(new FileReader("src/main/java/csvFiles/in.csv"))) {
+  public Employee readCsv(String pathFolderFile) {
+    try (BufferedReader bufferedReader = new BufferedReader(new FileReader(pathFolderFile))) {
       String[] dataEmployee = bufferedReader.readLine().split(",");
       Employee employee = new Employee(dataEmployee[0], dataEmployee[1], new BigDecimal(dataEmployee[2]));
       List<ClockRecord> clockRecordList = new ArrayList<>();

@@ -34,6 +34,10 @@ public class Payslip {
     return employee;
   }
 
+  public BigDecimal getMonthlyGrossSalary() {
+    return monthlyGrossSalary;
+  }
+
   @Override
   public String toString() {
     return "Payslip{" +
