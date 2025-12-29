@@ -11,7 +11,7 @@ Um sistema de automação de Departamento Pessoal desenvolvido em **Java**. A ap
 
 ## 🎯 Objetivo
 
-O projeto está sendo desenvolvido para consolidar conhecimentos em **Java 17**, com foco em boas práticas de engenharia de software:
+O projeto desenvolvido para consolidar conhecimentos em **Java 17**, com foco em boas práticas de engenharia de software:
 1.  **Regras de Negócio Complexas:** Cálculos financeiros e temporais.
 2.  **Arquitetura Desacoplada:** Uso de Interfaces e Injeção de Dependência.
 3.  **Manipulação de Arquivos:** Leitura e escrita de dados (I/O) para integração de sistemas.
